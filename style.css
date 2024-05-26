@@ -1,0 +1,97 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url("https://c02.purpledshub.com/uploads/sites/41/2013/04/GettyImages-640318118-c83a508.jpg?w=940&webp=1");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    backdrop-filter: blur(5px);
+}
+h1 {    
+    font-size: 60px;
+    padding: 10px;
+    text-align: center;
+    color: blanchedalmond;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    height: 70%;
+    margin: 0 auto;
+}
+#image {
+    border: 5px solid transparent;
+    max-width: 100%;
+    width: 500px;
+    height: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-weight: 300;
+    transition: transform 0.5s, filter 0.5s;
+}
+
+#paragraph {
+    font-size: 20px;
+    text-align: center;
+    color: #1d1e1d;
+}
+
+   
+#changeButton {
+    background-color: #9b8eb0;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 50%;
+    height: 45px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+
+.changed {
+    transform: round(5px);
+}
+
+@media (min-width: 320px) {
+    h1 {
+        padding: 30px;
+    }
+    .container {
+        width: 90%;
+        height: 60%;
+        padding: 10px;
+        margin: 0 auto;
+
+    }
+
+    #image {
+        width: 300px;
+        height: 350px;
+    }       
+
+    #changeButton {
+        font-size: 12px;
+        
+    }
+
+}
